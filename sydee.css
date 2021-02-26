@@ -1,0 +1,158 @@
+:root {
+  --btn-color: #20a8d8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: rebeccapurple;
+  /*background-image: url('../background-1.jpg');*/
+  /* font-size: 14px; */
+}
+.income {
+  margin-top: 40px;
+}
+.info {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+::placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.hide {
+  display: none;
+  content: "THANKS";
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.btn-signup {
+  position: relative;
+  margin-top: 20px;
+}
+.btn-signup span {
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.error {
+  visibility: hidden;
+  margin: 3px 0px;
+  font-size: 10px;
+  height: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 0, 0, 0.527);
+}
+.form-group {
+  margin-bottom: 0.5rem;
+}
+ion-icon {
+  font-size: 25px;
+  align-self: center;
+}
+.btn-color {
+  background-color: var(--btn-color);
+}
+
+.color {
+  color: var(--btn-color);
+}
+a {
+  font-size: 12px;
+}
+select {
+  font-size: 12px;
+}
+.popup-page {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  height: 80%;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+::placeholder {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+#links-container {
+  background-color: #80808038;
+  margin: 10px 0px 20px 0px;
+}
+#links-container a,
+#links-container a:focus,
+#links-container a:visited,
+#links-container a:hover {
+  display: inline-block;
+  height: 100%;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: gray;
+}
+#links-container a:active {
+  background-color: #fff;
+}
+
+.login-form,
+.signup-form {
+  width: 350px;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.login-form a,
+.signup-form a {
+  color: #fff;
+}
+.login-form h5 {
+  color: #fff;
+}
+.container-fluid {
+  overflow: auto;
+}
+
+@media (max-width: 500px) {
+  .popup-content {
+    width: 90%;
+  }
+}
